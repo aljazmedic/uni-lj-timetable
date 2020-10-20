@@ -13,4 +13,5 @@ vse logiranje se na koncu stisne s pomočjo `gzip`a, zato je potrebna namestitev
 ### Zagon
 
 za zagon je potrebno namestiti pakete npm, z ukazon `npm install`, nato pa zgraditi in zagnati strežnik, z
-ukazoma `npm run build` in `npm start`
+ukazoma `npm run build && npm start` oziroma `tsc -p . && npm start` na Windowsih
+{% v package.json je prebuild script nastiman na `rm -rf dist/`; ce `rm` ni aliasan na `rmdir` verjetno ne bo delal %}
